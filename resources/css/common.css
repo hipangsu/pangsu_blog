@@ -1,9 +1,10 @@
 @charset "utf-8";
 
-@import url(../css/reset.css);
-@import url(../css/base.css);
-@import url(../css/fonts.css);
 
 
-body.light {background: rgb(255,255,255); color: black;}
-body.dark {background: rgb(0,0,0); color: white;}
+/* ******************** header ******************** */
+.base_header {display:flex; align-items: center; background:rgba(0, 0, 0, 0.5); padding:16px 8px;}
+.tit_h1 {font-size: 2.4rem; font-weight:500;}
+.my_profile {display:flex; justify-content: flex-start; align-items: center;}
+.my_profile li {margin-right:8px;}
+.my_profile li a {display: block; padding:8px;}

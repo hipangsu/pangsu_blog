@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>light & Dark Mode</title>
     <link rel="stylesheet" href="../resources/css/common.css">
+    <link rel="stylesheet" href="../resources/css/mode.css">
 
     <style>
-        .ui_mode {
-            width:200px;
-            height:50px;
-        }
+        p {font-size:32px;}
+        button.ui_mode {position:relative; width:60px; height:60px;}
+        button.ui_mode::before {content:''; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:40px; height:40px; background: url(../resources/img/mode_light.png) no-repeat center / 100%;}
     </style>
 </head>
-<body>
-
-    <button type="button" class="ui_mode js_mode" value="dark"><span class="">dark</span></button>
+<body class="dark">
 
     <h1>light & Dark Mode</h1>
+ 
+    <button type="button" class="ui_mode js_mode" value="light"></button>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Pariatur odit nulla perferendis natus? Ullam reprehenderit 
+        laudantium similique quo molestiae minima eius sit beatae in 
+        accusamus, repudiandae dolorem voluptatem adipisci voluptatibus?
+    </p>
     
     <script src="../resources/js/mode.js"></script>
 </body>
