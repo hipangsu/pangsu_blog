@@ -2,9 +2,54 @@
 
 
 
-/* ******************** header ******************** */
-.base_header {display:flex; align-items: center; background:rgba(0, 0, 0, 0.5); padding:16px 8px;}
-.tit_h1 {font-size: 2.4rem; font-weight:500;}
-.my_profile {display:flex; justify-content: flex-start; align-items: center;}
-.my_profile li {margin-right:8px;}
-.my_profile li a {display: block; padding:8px;}
+/* ******************** 
+    base_header 
+******************** */
+.base_header {display:flex; align-items: center; background: var(--themed); padding:1.2rem 1.6rem;}
+.base_header .tit_h1 {font-size: 2.4rem; font-weight:500; width:15%; color:var(--black);}
+.base_header .my_profile {display:flex; justify-content: flex-start; align-items: center; width:65%;}
+.base_header .my_profile li {margin-right:.8rem;}
+.base_header .my_profile li a {display: block; padding:8px; color:var(--black);}
+.base_header .header_btn {width:20%; text-align: right;}
+.base_header .header_btn .mode {position:relative; width:40px; height:40px;}
+.base_header .header_btn .mode::before {content:''; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:40px; height:40px; background: url(../../resources/img/mode_light.png) no-repeat center / 100%;}
+
+
+
+
+
+/* ******************** 
+    base_body 
+******************** */
+.base_body {display:flex; background:var(--white);}
+
+
+
+
+/* ******************** 
+    base_nav 
+******************** */
+.base_nav {width:15%; min-height: calc(100vh - 8.8rem); border-right: 1px solid #000; padding: 2.4rem 1.6rem 0 1.6rem;}
+
+.base_nav .my_menu >li {position:relative; margin-top:1.6rem; padding-left: 2.4rem;}
+.base_nav .my_menu >li:first-child {margin-top:0;}
+.base_nav .my_menu >li[data-icon^='my_menu']::before {content:''; position:absolute; left:0; top:0; width: 2rem; height: 2rem;}
+.base_nav .my_menu >li[data-icon^='my_menu_icon01']::before {background:url(../../resources/img/html_icon.png) no-repeat center / 100%;}
+.base_nav .my_menu >li[data-icon^='my_menu_icon02']::before {background:url(../../resources/img/css_icon.png) no-repeat center / 100%;}
+.base_nav .my_menu >li[data-icon^='my_menu_icon03']::before {background:url(../../resources/img/javascript_icon.png) no-repeat center / 100%;}
+.base_nav .my_menu >li[data-icon^='my_menu_icon04']::before {background:url(../../resources/img/portfolio_icon.png) no-repeat center / 100%;}
+.base_nav .my_menu >li a {position:relative; display:block;  overflow:hidden; text-overflow: ellipsis; white-space: nowrap; padding-right:1.6rem;}
+
+.base_nav .my_menu .list_dot {}
+.base_nav .my_menu .list_dot > li {position: relative; padding-left:1.6rem; margin-top:0.8rem;}
+.base_nav .my_menu .list_dot > li::before {content:''; position:absolute; left:0.8rem; top:0.6rem; width:0.4rem; height:0.4rem; background:var(--black); border-radius: 50%;}
+.base_nav .my_menu .list_dot > li a[my_menu_icon01] {background:blue; border: 1px solid #000;}
+
+
+
+
+
+/* ******************** 
+    base_main 
+******************** */
+.base_main {width:85%; padding: 2.4rem 1.6rem 0 1.6rem; border: 1px solid #000; }

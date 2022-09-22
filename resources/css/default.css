@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+:root {
+	
+	--gray900:#212121;
+	--gray800:#424242;
+	--gray700:#616161;
+	--gray600:#757575;
+	--gray500:#9E9E9E;
+	--gray400:#BDBDBD;	
+	--gray300:#E0E0E0;
+	--gray200:#EEEEEE;
+	--gray100:#F5F5F5;
+	--gray50:#FAFAFA;
+	
+	--black:#000;
+	--white:#fff;	
+
+	/* --primary: #a6ff4d; */
+	/* --secondary: #03dac6; */
+	
+	/* --red: #ef5350; */
+	/* --success: #3182f6; */
+	/* --link: #6296df; */
+    --themed : #caff94;
+}
+
+:root.mode_dark {
+
+	--gray900:#FAFAFA;
+	--gray800:#F5F5F5;
+	--gray700:#EEEEEE;
+	--gray600:#E0E0E0;
+	--gray500:#BDBDBD;
+	--gray400:#9E9E9E;
+	--gray300:#757575;
+	--gray200:#616161;
+	--gray100:#424242;
+	--gray50:#212121;
+
+    --black:#fff;
+	--white:#000;
+
+	/* --primary: #a6ff4d; */
+	/* --secondary: #00a661; */
+
+	/* --error: #f44336; */
+	/* --success: #3182f6; */
+	/* --link: #6296df; */
+
+    --themed : #caff94;
+}
