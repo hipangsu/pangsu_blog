@@ -48,5 +48,11 @@
 	/* --success: #3182f6; */
 	/* --link: #6296df; */
 
-    --themed : #caff94;
+    --themed : #85ff0b;
 }
+
+
+:root a {
+	color: var(--black);
+}
+
