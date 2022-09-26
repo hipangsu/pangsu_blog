@@ -31,3 +31,24 @@ let yyyy = today.getFullYear();
 
 today = mm + '/' + dd + '/' + yyyy;
 console.log(today);
+
+
+
+let sum = (a, b) => {
+    let result = a + b;
+    return result;
+};
+
+alert(sum(1,2));
+
+const numbers = ["1", "2", "3", "4", "5"];
+
+for(let i =0; i<numbers.length; i++) {
+    console.log('ez');
+}
+
+numbers.forEach(function() {
+    console.log('ez');
+});
+
+

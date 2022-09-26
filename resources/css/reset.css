@@ -77,7 +77,7 @@ summary {
 	box-sizing: border-box;
 }
 
-a:not([class]) {
+a {
     text-decoration-skip-ink: auto;
 	text-decoration: none;
 }
