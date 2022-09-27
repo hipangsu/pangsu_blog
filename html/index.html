@@ -8,62 +8,27 @@
     <title>pangsu_blog</title>
 
     <link rel="stylesheet" href="../resources/css/base.css">
+
+    <script src="../resources/js/header.js"></script>
 </head>
 <body>
 
-    <header class="base_header">
-        <h1 class="tit_h1">팡수's BLOG</h1>
-        <ul class="my_profile">
-            <li><a href="#">hipangsu@gmail.com</a></li>
-            <li><a href="#">010-9582-0728</a></li>
-            <li><a href="#">고광수</a></li>
-        </ul>
-        <div class="header_btn">
-            <button type="button" class="mode js_mode"><span class="hidden">mode</span></button>
-            <!-- <button type="button" class="">btn2</button> -->
+    <div class="base_wrap">
+        <header class="header_wrap" include-html="header.html">
+            <script>headerHTML();</script>
+        </header>
+
+        <div class="base_body">
+            <main class="body_main">
+                <button type="button" class="aaa">111111</button>
+            </main> 
         </div>
-    </header>
 
-    <div class="base_body">
-        <nav class="base_nav">
-            <ul class="my_menu js_acc_item">
-                <li data-icon="my_menu_icon01">
-                    <a class="js_acc_hd" href="#">html</a>
-                    <ul class="list_dot">
-                        <li><a href="#">11111111111111111111111111111111111</a></li>
-                        <li><a href="#">222222222</a></li>
-                        <li><a href="#">333333333</a></li>
-                    </ul>
-                </li>
-                <li data-icon="my_menu_icon02">
-                    <a class="js_acc_hd" href="#">css</a>
-                    <ul class="list_dot">
-                        <li><a href="#">111111111</a></li>
-                        <li><a href="#">222222222</a></li>
-                        <li><a href="#">333333333</a></li>
-                    </ul>
-                </li>
-                <li data-icon="my_menu_icon03">
-                    <a class="js_acc_hd" href="#">javascript</a>
-                    <ul class="list_dot">
-                        <li><a href="#">111111111</a></li>
-                        <li><a href="#">222222222</a></li>
-                        <li><a href="#">333333333</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-        <main class="base_main">
-            1
-        </main>
-
-        <aside class="base_aside">
-            <div class="aside_box">
-                
-            </div>
-        </aside>
+        <footer class="footer_wrap">
+            <!-- <script>footerHTML();</script> -->
+        </footer>
     </div>
-    <script src="../resources/js/common.js"></script>
+    
+    <!-- <script src="../resources/js/common.js"></script> -->
 </body>
 </html>
