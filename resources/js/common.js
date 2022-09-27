@@ -18,17 +18,22 @@
 // })(window, document);
 
 const mode = {
+    target: null,
 
     click: function() {
+        const o = this;
         // const html = document.querySelector('html');
         
         console.log('ezzzz');
     },
 
     init: function() {
-        const modeBtn = document.querySelector('.js_mode')
+        const o = this;
+        o.target = document.querySelector('.js_mode');
 
-        modeBtn.addEventListener('click');
+        o.target.addEventListener('click', function() {
+            o.click();
+        });
     }
 }
 
