@@ -1,20 +1,19 @@
-const modeBtn = document.querySelector('.js_mode');
+const mode = {
+    target: document.querySelector('.js_mode'),
 
-function mode(self) {
-    const bg = document.querySelector('body');
-    const color = document.querySelector('p');
+    click: function() {
+        const html = document.querySelector('html');
 
-    if(self.value === 'light') {
-        bg.style.backgroundColor = 'white';
-        color.style.color = 'black';
-        self.value = 'dark';
-    } else {
-        bg.style.backgroundColor = 'black';
-        color.style.color = 'white';
-        self.value = 'light';
+        // html.classList.toggle('mode_dark');
+        console.log(html);
+    },
+
+    init: function() {
+        mode.target.addEventListener('click', function() {
+
+        mode.click();
+        })
     }
-
-    console.log(self.value);
 }
 
-modeBtn.addEventListener('click', mode);
+mode.init();

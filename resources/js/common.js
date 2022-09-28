@@ -17,25 +17,5 @@
 
 // })(window, document);
 
-const mode = {
-    target: null,
-
-    click: function() {
-        const o = this;
-        // const html = document.querySelector('html');
-        
-        console.log('ezzzz');
-    },
-
-    init: function() {
-        const o = this;
-        o.target = document.querySelector('.js_mode');
-
-        o.target.addEventListener('click', function() {
-            o.click();
-        });
-    }
-}
 
 
-mode.init();
