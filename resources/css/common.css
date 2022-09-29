@@ -38,7 +38,7 @@
 .main_section .tit_h2_box .tit_h2 {font-size:3.6rem; font-weight: 700; margin-bottom:1.6rem;}
 .main_section .tit_h2_box .h2_txt {font-size:1.6rem; line-height: 1.3;}
 
-.main_section .main_cont .code_cont {background:#f9fbe7; padding: .8rem; margin-bottom:4rem;}
+.main_section .main_cont .code_cont {background:#f9fbe7; padding: 3.2rem .8rem; margin-bottom:4rem;}
 
 
 
@@ -53,6 +53,7 @@
 /* [class*="bul_"].dep3 >li {margin-top:0rem; color:blue; font-size:1.2rem}  */
 [class*="bul_tit"] {display: block; margin-bottom: 1.6rem; font-size:2rem;}
 [class*="bul_"] >li {position:relative; padding-left:1.6rem; line-height: 1.3; margin-top:1.2rem;}
+[class*="bul_"] >li:first-child {margin-top:0;}
 [class*="bul_"] >li::before {content:''; position:absolute; left:.8rem; }
 .bul_dot >li::before {top:.8rem; width:0.3rem; height:0.3rem; background:var(--black); border-radius: 50%;}
 .bul_hypen >li::before {content:''; top:1rem; width:0.4rem; height: .1rem; background:var(--black);}
@@ -64,3 +65,14 @@ disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, l
  */
 .bul_counter.decimal >li::before {content: counter(number, decimal)'.'; }
 .bul_counter.upper-alpha >li::before {content: counter(number, upper-alpha)'.';}
+
+dl[class*="bul_"] {}
+dl[class*="bul_"] > div:not(:first-child) {margin-top:1.6rem;}
+dl[class*="bul_"] > div dt {font-weight: 700; margin-bottom:.8rem;}
+dl[class*="bul_"] > div dd {position:relative; display: block; line-height: 1.5; padding-left:1.6rem;}
+
+dl.bul_dot > div dd::before {content:''; position:absolute; left:.4rem; top:.8rem; width:.4rem; height: .4rem; background:var(--black); border-radius: 50%;}
+dl.bul_hypen > div dd::before {content:''; position:absolute; left:.4rem; top:1rem; width:.4rem; height: .1rem; background:var(--black);}
+dl.bul_counter > div {counter-reset: number;}
+dl.bul_counter > div dd {padding-left:0;}
+dl.bul_counter > div dd::before {content:''counter(number, decimal) '.'; counter-increment: number; padding:0 .8rem;}
