@@ -83,13 +83,13 @@ dl.bul_counter > div dd::before {content:''counter(number, decimal) '.'; counter
 ******************** */
 .caution {font-size:1.4rem; color: #ef5350;}
 .form_wrap {padding: .8rem 1.6rem;}
-.form_wrap .form_box {display:flex; flex-wrap: wrap; margin-bottom:1.6rem;}
-.form_wrap .form_box .form_tit {width:15%; padding-top:.8rem;}
-.form_wrap .form_box .form_cont {display:flex; align-items: center; flex-wrap: wrap; width:85%;}  
-.form_wrap .form_box .form_cont .form_item {display:inline-block; margin-right:.8rem;}
-.form_wrap .form_box .form_cont .form_item input[type=text] {width:18rem; height:3.6rem; }
-.form_wrap .form_box .form_cont .form_item input[type=radio] {width: 2.4rem; height:2.4rem; border: 1px solid #000;}
-.form_wrap .form_box .form_cont .form_item input[type=checkbox] {width:2.4rem; height:2.4rem;}
-.form_wrap .form_box .form_cont .form_info {width:100%; margin-top:.8rem;}
-.form_wrap .form_box .form_info .caution {}
+.form_box {display:flex; flex-wrap: wrap; margin-bottom:1.6rem;}
+.form_box .form_tit {width:15%; padding-top:.8rem;}
+.form_box .form_cont {display:flex; align-items: center; flex-wrap: wrap; width:85%;}  
+.form_box .form_cont .form_item {display:inline-block; margin-right:.8rem;}
+.form_box .form_cont .form_item input[type=text] {width:18rem; height:3.6rem; }
+.form_box .form_cont .form_item input[type=radio] {width: 2.4rem; height:2.4rem; border: 1px solid #000;}
+.form_box .form_cont .form_item input[type=checkbox] {width:2.4rem; height:2.4rem;}
+.form_box .form_cont .form_info {width:100%; margin-top:.8rem;}
+.form_box .form_info .caution {}
 
