@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>label form</title>
+    <title>form</title>
 
     <link rel="stylesheet" href="../resources/css/base.css">
 
-    <script src="../resources/js/header.js"></script>
+    <script src="../resources/js/html_piece.js"></script>
 </head>
 <body>
     
@@ -16,6 +16,7 @@
         
         <header class="header_wrap" include-html="header.html">
             <script>headerHTML();</script>
+            
         </header>
 
         <div class="base_body">
@@ -119,6 +120,7 @@
                                     <input type="checkbox" id="ck2" title="checkbox button">
                                     <label for="ck1">checkbox3</label>
                                     <input type="checkbox" id="ck3" title="checkbox button">
+                                    <button type="button" data-src="/tooltip.html">aaaa</button>
                                 </div>
 
                                 <div class="form_info">
@@ -133,8 +135,8 @@
             </main> 
         </div>
 
-        <footer class="footer_wrap">
-            <!-- <script>footerHTML();</script> -->
+        <footer class="footer_wrap" include-html="footer.html">
+            <script>footerHTML();</script>
         </footer>
     </div>
     
