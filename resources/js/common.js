@@ -1,5 +1,4 @@
 
-
 const mode = {
     target: document.querySelector('.js_mode'),
 
