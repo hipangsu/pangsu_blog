@@ -1,20 +1,48 @@
 
-const mode = {
-    target: document.querySelector('.js_mode'),
 
-    click: function() {
-        const html = document.querySelector('html');
+;(function(){
+    window.common = {};
 
-        // console.log(html);
-        html.classList.toggle('mode_dark');
-    },
+    common = {
 
-    init: function() {
-        mode.target.addEventListener('click', function() {
+        mode: {
+            target: document.querySelector('.js_mode'),
 
-        mode.click();
-        })
+            mode_act: function() {
+                const html = document.querySelector('html');
+    
+                html.classList.toggle('mode_dark');
+            },
+            init: function() {
+                const o = this;
+
+                o.target.addEventListener('click', function() {
+                    o.mode_act();
+                    console.log(this);
+                })
+                // this.target.addEventListener('click', () => this.mode_act());  
+            },
+        },
+
+        ex : {
+            target: null,
+
+            ex_act: function() {
+                console.log('hello');
+            },
+            init: function() {
+                const o = this;
+
+                o.ex_act();
+            }
+
+        },
+
     }
-}
 
-mode.init();
+    document.addEventListener('DOMContentLoaded', function(){
+        common.mode.init();
+        common.ex.init();
+    });
+    
+})(window, document);

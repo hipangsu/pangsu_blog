@@ -1,29 +1,29 @@
 // 'use strict';
 
 ;(function(win, doc, undefined) {
+    window.common = {};
 
-     common = {
-        antiCache: function() {
-            
-        },
-    
+    common = {
 
         init: function() {
             common.header();
         },
 
         header: function() {
-            document.querySelector('.js_mode').addEventListener('click', common.mode);
+            doc.querySelector('.js_mode').addEventListener('click', common.mode);
         },
 
         mode: function() {
             document.querySelector('html').classList.toggle('dark');
-            console.log('mode ez')
+            console.log(this)
         },
         
     };
 
-    common.init();
+    document.addEventListener('DOMContentLoaded', function() {
+
+        common.init();
+    })
 
 }) (window, document);
 
