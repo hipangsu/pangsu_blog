@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" box="IE=edge">
+    <meta name="viewport" box="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+
+    <link rel="stylesheet" href="../resources/css/base.css">
+
+    <script src="../resources/js/html_piece.js"></script>
+</head>
+<body>
+    
+    <div class="base_wrap">
+        
+        <header class="header_wrap" include-html="header.html">
+            <script>headerHTML();</script>
+        </header>
+
+        <div class="base_body">
+            <main class="body_main">
+                <section class="main_section">
+                    <div class="main_tit_box">
+                        <h2 class="tit_h2">css - grid</h2>
+                        <p class="h2_txt">Flex는 한 방향 레이아웃 시스템이고 (1차원)</p>
+                        <p class="h2_txt">Grid는 두 방향(가로-세로) 레이아웃 시스템 (2차원)</p>
+                    </div>
+
+                    <div class="main_cont">
+                        <!-- <div class="container">
+                            <div class="grid header">
+                                <div class="item">1</div>
+                                <div class="item">2</div>
+                                <div class="item">3</div>
+                            </div>
+
+                            <div class="grid body">
+                                <div class="item">1</div>
+                                <div class="item dep2">
+                                    <div class="box">2-1</div>
+                                    <div class="box">2-2</div>
+                                    <div class="box">2-3</div>
+                                    <div class="box">2-4</div>
+                                    <div class="box">2-5</div>
+                                    <div class="box">2-6</div>
+                                    <div class="box">2-7</div>
+                                    <div class="box">2-8</div>
+                                    <div class="box">2-9</div>
+                                    <div class="box">2-10</div>
+                                </div>
+                                <div class="item">3</div>
+                            </div>
+
+                            <div class="grid footer">
+                                <div class="item">1</div>
+                            </div>
+                        </div> -->
+
+                        <div class="grid-wrap">
+
+                            <div class="grid-header">
+                                <div class="item">header 1</div>
+                                <div class="item">header 2</div>
+                                <div class="item">header 3</div>
+                            </div>
+
+                            <div class="grid-main">
+                                <div class="item">main 1</div>
+                                <div class="item">main 2</div>
+                                <div class="item">main 3</div>
+                            </div>
+
+                            <div class="grid-footer">
+                                <div class="item">footer 1</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+            </main> 
+        </div>
+
+        <footer class="footer_wrap" include-html="footer.html">
+            <script>footerHTML();</script>
+        </footer>
+    </div>
+    
+    <!-- <script src="../resources/js/common.js"></script> -->
+</body>
+</html>
