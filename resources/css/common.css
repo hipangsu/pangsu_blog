@@ -157,7 +157,18 @@ dl.bul_counter > div dd::before {content:''counter(number, decimal) '.'; counter
     padding: 8px;
 }
 
-.grid-header {border: 1px solid #000;}
+.grid-header {
+    display:grid;
+    grid-template-columns: [logo]1fr [h_center]3fr [h_menu]1fr;
+    grid-area: "header";
+    background:#777; 
+    padding: .8rem;
+    column-gap: 10px;
+}
+
+.grid-header .item {
+    border: 1px solid #fff;
+}
 
 .grid-main {border: 1px solid #000;}
 
