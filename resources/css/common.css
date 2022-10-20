@@ -159,6 +159,7 @@ dl.bul_counter > div dd::before {content:''counter(number, decimal) '.'; counter
                         "footer";
     row-gap: 20px;
     padding: 8px;
+    margin-top:24px;
 }
 
 .grid-header {
