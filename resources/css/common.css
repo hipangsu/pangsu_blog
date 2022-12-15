@@ -1,5 +1,30 @@
 @charset "utf-8";
 
+/* ********** layout ********** */
+/* ********** layout ********** */
+/* ********** layout ********** */
+.wrap {background-color:var(--bg-primary);}
+.base-wrap {display:flex; justify-content: flex-start; flex-direction: row; max-width:132rem; min-height:100vh; background-color:var(--bg-secondary); margin:0 auto;}
+
+.sidebar-left {border: 1px solid #000; width:20%; padding:.4rem .8rem;}
+.main-wrap {border: 1px solid #000; width:60%;}
+.sidebar-right{border: 1px solid #000; width:20%;}
+
+
+
+
+
+/* ********** sidebar-left ********** */
+/* ********** sidebar-left ********** */
+/* ********** sidebar-left" ********** */
+.logo-wrap {text-align: center;}
+.logo-wrap .logo {font-family: 'Ansungtangmyun-Bold';}
+.menu-box {margin-top:3.2rem;}
+.menu-box .menu-title {color:var(--gray500); font-weight: 900;}
+.menu-box .menu-item {}
+.menu-box .menu-item li {}
+.menu-box .menu-item li a {color:var(--gray300)}
+
 
 
 
