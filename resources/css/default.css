@@ -16,9 +16,11 @@
 	--black:#000;
 	--white:#fff;
 	
-	--bg-primary : #607d8b;
-	--bg-secondary : #455a64; 
+	--bg-primary : #373e57;
+	--bg-secondary : #151728; 
 	--bg-tertiary : #263238;
+
+	--link-color : #b0bec5 ;
 	
     --themed : #fff;
 }
