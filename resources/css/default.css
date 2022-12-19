@@ -21,34 +21,13 @@
 	--bg-tertiary : #263238;
 
 	--link-color : #b0bec5 ;
+	--line-color : #9E9E9E;
 	
     --themed : #fff;
 }
 
 
-
-
-
-
-
-
-
-
-:root.mode_dark {
-
-	--gray900:#FAFAFA;
-	--gray800:#F5F5F5;
-	--gray700:#EEEEEE;
-	--gray600:#E0E0E0;
-	--gray500:#BDBDBD;
-	--gray400:#9E9E9E;
-	--gray300:#757575;
-	--gray200:#616161;
-	--gray100:#424242;
-	--gray50:#212121;
-
-    --black:#fff;
-	--white:#000;
-
-}
+* ul >li i {color: var(--link-color);}
+* ul >li a {color: var(--link-color);}
+* ul >li a:hover {color:var(--white);}
 
