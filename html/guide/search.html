@@ -57,7 +57,7 @@
 
             <main class="main-wrap">
                 <form action="">
-                    <div class="search-wrap">
+                    <div class="search-wrap ">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="search" class="search" placeholder="search...">
                     </div>
@@ -87,9 +87,19 @@
                        
                         <div class="guide-cont">
 
-                            <div class="guide-search">
-                                <input type="text" value="aaa">
-                                <label for=""></label>
+                            <div class="guide-search-wrap">
+                                <input type="search" value="search..." >
+                                <div class="delete-wrap">
+                                    <button type="button" class="delete-btn"></button>
+                                    
+                                </div>
+
+                                <script>
+                                    const btnClear = document.querySelector('.delete-wrap');
+                                        btnClear.addEventListener('click', function(){
+                                        btnClear.parentNode.querySelector('input').value = "";
+                                    })
+                                </script>
                             </div>
                             
                         </div>

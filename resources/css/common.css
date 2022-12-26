@@ -103,6 +103,11 @@
 .bul-dot li::before {content:''; position:absolute; left:.8rem; top:.6rem; width:.4rem; height:.4rem; background:var(--white); border-radius: 50%;}
 
 
+/* guide-search */
+.guide-search-wrap {position:relative; display: inline-block;}
+.guide-search-wrap input[type=search] {background:var(--bg-primary); padding-right:2rem;}
+.guide-search-wrap .delete-wrap {position: absolute; right:0; top:.4rem; width:2rem; height:2rem; background:url(../img/ico_delete.png)no-repeat center / 100%;}
+.guide-search-wrap .delete-btn {display:block; width:100%; height:100%; border: 1px solid #000;}
 
 
 
