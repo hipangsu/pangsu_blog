@@ -106,8 +106,9 @@
 /* guide-search */
 .guide-search-wrap {position:relative; display: inline-block;}
 .guide-search-wrap input[type=search] {background:var(--bg-primary); padding-right:2rem;}
-.guide-search-wrap .delete-wrap {position: absolute; right:0; top:.4rem; width:2rem; height:2rem; background:url(../img/ico_delete.png)no-repeat center / 100%;}
-.guide-search-wrap .delete-btn {display:block; width:100%; height:100%; border: 1px solid #000;}
+.guide-search-wrap input[type=search]:focus {background:var(--white);}
+.guide-search-wrap .delete-wrap {position: absolute; right:.4rem; top:.4rem; width:2rem; height:2rem; background:url(../img/ico_delete.png)no-repeat center / 100%;}
+.guide-search-wrap .delete-btn {display:block; width:100%; height:100%;}
 
 
 
