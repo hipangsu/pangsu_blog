@@ -28,7 +28,6 @@
                             <li><a href=""><i class="fa-solid fa-video"></i>Video</a></li>
                             <li><a href=""><i class="fa-solid fa-diagram-project"></i>Book</a></li>
                             <li><a href=""><i class="fa-solid fa-file"></i>file</a></li>
-                            
                         </ul>
                     </div>
                     <div class="menu-box">
@@ -86,24 +85,33 @@
                     <div class="guide-wrap">
                        
                         <div class="guide-cont">
-
-                            <div class="guide-search-wrap">
-                                <div class="input-wrap">
-                                    <input type="search" value="search..." >
-                                    <button type="button" class="delete-btn" onfocus="this.value=''";></button>
-                                </div>
-                                <div class="delete-wrap">
-                                    
-                                </div>
-
-                                <script>
-                                    const btnClear = document.querySelector('.delete-wrap');
-                                        btnClear.addEventListener('click', function(){
-                                        btnClear.parentNode.querySelector('input').value = "";
-                                    })
-                                </script>
+                            <div class="search-wrap">
+                                <input type="search" class="search" value="search..." >
+                                <button type="button" class="clear-btn"></button>
                             </div>
-                            
+
+                            <script>
+                                function searchInput() {
+                                    const searchItem = document.querySelector('.search');
+
+                                }
+
+                                function onsearch(input) {
+                                    const searchInput = document.querySelector('.search');
+                                    if(searchInput.input.value === "") {
+                                        console.log('ez');
+                                    } else {
+                                        console.log('eeeezzzz');
+                                    }
+                                } 
+
+                                searchInput.addEventListener("search", onsearch());
+
+                                const btnClear = document.querySelector('.clear-btn');
+                                    btnClear.addEventListener('click', function(){
+                                    btnClear.parentElement.querySelector('input').value = "";
+                                })
+                            </script>
                         </div>
                         
                     </div>
