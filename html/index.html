@@ -15,44 +15,10 @@
     <div class="wrap">
 
         <div class="base-wrap">
-            <aside class="sidebar-left">
-                <div class="logo-wrap">
-                    <h1 class="logo"><a href="index.html">L O G O</a></h1>
-                </div>
-
-                <div class="menu-wrap">
-                    <div class="menu-box">
-                        <h2 class="menu-title">MENU</h2>
-                        <ul class="menu-item">
-                            <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
-                            <li><a href=""><i class="fa-solid fa-video"></i>Video</a></li>
-                            <li><a href=""><i class="fa-solid fa-diagram-project"></i>Book</a></li>
-                            <li><a href=""><i class="fa-solid fa-file"></i>file</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu-box">
-                        <h2 class="menu-title">GUIDE</h2>
-                        <ul class="menu-item">
-                            <li><a href=""><spn class="category">[html]</spn>accordion</a></li>
-                            <li><a href=""><spn class="category">[html]</spn>tag</a></li>
-                            <li><a href="../html/guide/css_bul.html"><spn class="category">[css]</spn>bul</a></li>
-                            <li><a href=""><spn class="category">[css]</spn>menu</a></li>
-                            <li><a href=""><spn class="category">[css]</spn>bul</a></li>
-                            <li><a href=""><spn class="category">[css]</spn>menu</a></li>
-                            <li><a href=""><spn class="category">[javascript]</spn>mode</a></li>
-                            <li><a href=""><spn class="category">[javascript]</spn>slide</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="sns-wrap">
-                    <ul class="menu-item">
-                        <li><a href="#"><i class="fa-brands fa-square-github fa-2xl"></i><span class="hidden">github</span></a></li>
-                        <li><a href="#"><i class="fa-brands fa-blogger fa-2xl"></i><span class="hidden">blog</span></a></li>
-                        <li><a href="#"><i class="fa-brands fa-square-instagram fa-2xl"></i><span class="hidden">instagram</span></a></li>
-                    </ul>
-                </div>
-            </aside>
+            <div data-include-path="sidebar-left.html">
+                <script src="../resources/js/include.js"></script>
+            </div>
+            
 
             <main class="main-wrap">
                 <form action="">
@@ -71,14 +37,13 @@
                             </div>
                         </div>
                         <ul class="tab-item">
-                            <li class="active"><a href="#tab1">Timeline</a></li>
-                            <li><a href="#tab2">About</a></li>
-                            <li><a href="#tab3">Friends</a></li>
-                            <li><a href="#tab4">Photos</a></li>
-                            <li><a href="#tab5">More</a></li>
+                            <li class="active"><a href="#tab1">Home</a></li>
+                            <li><a href="#tab2">Menu</a></li>
+                            <li><a href="#tab3">DeepDive</a></li>
+                            <li><a href="#tab4">Nomadcoder</a></li>
+                            <li><a href="#tab5">Guide</a></li>
                         </ul>
                     </div>
-
                 </section>
 
                 <section class="section-wrap">
@@ -86,7 +51,7 @@
                     <div class="tab-cont">
 
                         <div id="tab1" class="cont">
-                            <h2 class="hidden">Timeline</h2>
+                            <h2 class="hidden">home</h2>
                             <div class="container box-s">
                                 <div class="title-box">
                                     <h3 class="title">Web Publisher</h3>
@@ -116,10 +81,7 @@
                         </div>
 
                         <div id="tab1" class="cont" style="display:none";>
-                            
-                            <div class="timeline-wrap">
-                                
-                            </div>
+                            tab2
                         </div>
 
                         <div id="tab1" class="cont" style="display:none";>
@@ -137,51 +99,12 @@
                     </div>
 
                 </section>
-
                 
             </main>
 
-
-            <aside class="sidebar-right">
-
-                <ul class="alarm-wrap">
-                    <li><i class="fa-solid fa-envelope"></i></li>
-                    <li><i class="fa-solid fa-bell"></i></li>
-                    <li><i class="fa-solid fa-message"></i></li>
-                    <li>
-                        <div class="my-name">
-                            <span class="">hi pangsu</span>
-                            <div class="my-menu">
-                                <!--  -->
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-
-                <dl class="portfolio-wrap">
-                    <h2 class="title">PORTFOLIO</h2>
-                    <div class="portfolio-01">
-                        <dt>한국투자증권</dt>
-                        <dd>
-                            <span class="date">2022.04.01 ~ 2022.05.01</span>
-                        </dd>
-                    </div>
-                    <div class="portfolio-02">
-                        <dt>나이스지키미</dt>
-                        <dd>
-                            <span class="date">2022.04.01 ~ 2022.05.01</span>
-                        </dd>
-                    </div>
-                    <div class="portfolio-03">
-                        <dt>christmas card</dt>
-                        <dd>
-                            <span class="date">2022.12.01 ~ 2022.12.23</span>
-                        </dd>
-                        <a href="" class="link"></a>
-                    </div>
-                </dl>
-
-            </aside>
+            <div data-include-path="sidebar-right.html">
+                <script src="../resources/js/include.js"></script>
+            </div>
         </div>
     </div>
 
