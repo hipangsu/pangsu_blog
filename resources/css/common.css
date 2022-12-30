@@ -21,7 +21,8 @@
 .logo-wrap .logo {font-family: 'Ansungtangmyun-Bold';}
 .logo-wrap .logo a {color:var(--white);}
 .menu-box {margin-top:2.4rem;}
-.menu-box .menu-title {color:var(--title-color); font-weight: 900; font-size:1.6rem; margin-bottom:.8rem;}
+.menu-box .menu-title {font-weight: 900; font-size:1.6rem; margin-bottom:.8rem;}
+.menu-box .menu-title a {color:var(--title-color);}
 .menu-item li a {font-size:1.2rem;/* color:var(--link-color)*/}
 /* .menu-item li a:hover {color:var(--white);} */
 .menu-item li a i {margin-right:.8rem;}
@@ -114,8 +115,9 @@
 
 
 .category-wrap {padding:3.2rem 1.6rem; margin-top:2.4rem;}
+.category-wrap .category-title {color:var(--title-color); font-size:2.4rem; font-weight: 700; margin-bottom:2.4rem;}
 .category-wrap .category-item {}
-.category-wrap .category-item li {position:relative; margin:1.6rem 0;}
+.category-wrap .category-item li:not(:first-child) {margin-top:1.6rem}
 .category-wrap .category-item li a {display:block; padding:1.6rem .8rem; background:var(--bg-primary); border-radius: .8rem;}
 .category-wrap .category-item li a:hover {background:var(--gray500);}
 

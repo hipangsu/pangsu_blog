@@ -27,7 +27,6 @@
     --themed : #fff;
 }
 
-
 * ul >li i {color: var(--link-color);}
 * ul >li a {color: var(--link-color);}
 * ul >li a:hover {color:var(--white);}
