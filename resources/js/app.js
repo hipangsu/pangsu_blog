@@ -1,22 +1,25 @@
-const player = {
-    name: "pangsu",
-    points: 10,
-
-}
-
-console.log(player);
-console.log(player.points);
-
 const objects = {
-    target: document.querySelector(),
-
+    target: null,
 
     event : function() {
-
+        console.log("this is javascript");
     },
 
 
     init: function() {
-
+        this.event();
     },
 }
+
+objects.init();
+
+
+// this ? 
+// argument 매개변수? 데이터전송?
+
+
+function sayHello(v) {
+    console.log(v);
+}
+
+sayHello("pangsu");
